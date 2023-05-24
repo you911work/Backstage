@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user signinBx">
+                <div class="imgBx"><img src="images/1.webp" alt=""></div>
+                <div class="formBx">
+                    <form action="">
+                        <h2>會員登入</h2>
+                        <input type="text" name="" placeholder="帳號">
+                        <input type="password" name="" placeholder="密碼">
+                        <input type="submit" name="" value="登入">
+                        <p class="signup">還不是會員?<a href="#" onclick="toggleForm();">按這裡註冊</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form action="">
+                        <h2>會員註冊</h2>
+                        <input type="text" name="" placeholder="帳號">
+                        <input type="email" name="" placeholder="信箱">
+                        <input type="password" name="" placeholder="密碼">
+                        <input type="password" name="" placeholder="確認密碼">
+                        <input type="submit" name="" value="註冊">
+                        <p class="signup">已經是會員?<a href="#" onclick="toggleForm();">按這裡登入</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="images/1.webp" alt=""></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        function toggleForm(){
+            var container = document.querySelector('.container');
+            container.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
